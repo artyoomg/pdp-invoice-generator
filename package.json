@@ -1,0 +1,20 @@
+{
+  "name": "pdp-pdf-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@heroui/card": "^2.2.22",
+    "@heroui/image": "^2.2.15",
+    "@heroui/system": "^2.4.19",
+    "@heroui/theme": "^2.4.19",
+    "framer-motion": "^12.23.6",
+    "tailwindcss": "^4.0.0"
+  }
+}
