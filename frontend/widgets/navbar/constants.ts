@@ -5,8 +5,4 @@ export const navLinks: NavItem[] = [
         label: "Home",
         href: "/",
     },
-    // {
-    //     label: "History",
-    //     href: "/history",
-    // }
 ]
