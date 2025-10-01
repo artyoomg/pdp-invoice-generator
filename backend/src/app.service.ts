@@ -77,7 +77,7 @@ export class AppService {
   }
 
   private addItemsTable(doc: typeof PDFDocument, data: InvoiceData): void {
-    const tableTop = 300;
+    const tableTop = 325;
     const itemCodeX = 50;
     const descriptionX = 150;
     const quantityX = 350;
