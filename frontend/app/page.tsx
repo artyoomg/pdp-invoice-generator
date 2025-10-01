@@ -9,16 +9,15 @@ import InvoiceGenerator from "../features/invoice-generator";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-16 py-8 md:py-10">
+    <section className="flex flex-col items-center justify-center gap-16 pb-10">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Generate an invoice and export it in PDF </span>
-        <span className={`${title({ color: "pink" })}`}>
-          in clicks!
+        <span className={title()}>
+          Generate an invoice and export it in PDF{" "}
         </span>
+        <span className={`${title({ color: "pink" })}`}>in clicks!</span>
       </div>
 
-      <InvoiceGenerator/>
-
+      <InvoiceGenerator />
     </section>
   );
 }
