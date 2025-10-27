@@ -1,0 +1,21 @@
+name: deploy
+
+on:
+  push:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    # needs: [lint]   # uncomment if you have a lint job
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Stop old containers
+        working-directory: ./backend
+        run: docker compose down
+
+      - name: Build and start containers
+        working-directory: ./backend
+        run: docker compose up -d --build

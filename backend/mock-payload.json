@@ -1,0 +1,37 @@
+{
+  "invoiceNumber": "INV-2025-001",
+  "from": "Acme Corporation\n123 Main Street\nNew York, NY 10001",
+  "billTo": "John Doe\n456 Market Street\nSan Francisco, CA 94111",
+  "shipTo": "John Doe\n789 Warehouse Ave\nSan Francisco, CA 94124",
+  "date": "2025-09-30",
+  "paymentTerms": "Net 30",
+  "dueDate": "2025-10-30",
+  "poNumber": "PO-789456",
+  "items": [
+    {
+      "name": "Web Design Services",
+      "quantity": 10,
+      "rate": 50,
+      "amount": 500
+    },
+    {
+      "name": "Hosting (12 months)",
+      "quantity": 1,
+      "rate": 120,
+      "amount": 120
+    },
+    {
+      "name": "Domain Registration",
+      "quantity": 1,
+      "rate": 15,
+      "amount": 15
+    }
+  ],
+  "notes": "Thank you for your business!",
+  "terms": "Payment due within 30 days. Late fees may apply.",
+  "subtotal": 635,
+  "tax": 50.8,
+  "total": 685.8,
+  "paid": 200,
+  "balanceDue": 485.8
+}
