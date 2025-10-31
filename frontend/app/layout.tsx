@@ -4,6 +4,7 @@ import { Link } from "@heroui/link";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import { siteConfig } from "@/shared/config/site";
 import { fontSans } from "@/shared/config/fonts";
@@ -50,6 +51,7 @@ export default function RootLayout({
           </div>
         </Providers>
       </body>
+      <GoogleAnalytics gaId="G-X8T2F9EHSN" />
     </html>
   );
 }

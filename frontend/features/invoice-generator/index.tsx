@@ -10,6 +10,7 @@ import { useState } from "react";
 import { InvoiceData, InvoiceItem } from "../../shared/types/invoice";
 import { generateInvoicePDF, downloadPDF } from "../../shared/api/invoice";
 import { addToast } from "@heroui/toast";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function InvoiceGenerator() {
   const [formData, setFormData] = useState<Partial<InvoiceData>>({
@@ -69,6 +70,7 @@ export default function InvoiceGenerator() {
       const pdfBlob = await generateInvoicePDF(invoiceData);
       const filename = `invoice-${invoiceData.invoiceNumber}.pdf`;
       downloadPDF(pdfBlob, filename);
+      sendGAEvent("event", "PDF Generation")
       addToast({
         description: "Successfully generated PDF invoice. Downloading will start automatically",
         shouldShowTimeoutProgress: true,
